@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+        /* Primary */
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+
+        /* Neutral */
+        --very-pale-blue: hsl(225, 100%, 98%);
+        --desaturated-blue: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+        --hover: rgb(118, 108, 241);
+
+    /* Font Weight */
+        --font-regular: 400;
+        --font-bold: 700;
+        --font-bolder: 900;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px; 
+    color: var(--desaturated-blue);  
+}
+
+/* ORDER SUMMARY COMPONENT */
+.order-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    max-width: 327px;
+    padding-bottom: 17px;;
+    border-radius: 10px;
+}
+
+/* Component image */
+.order-component img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0  0;
+}
+
+/* Component text */
+.order-component h1{
+    font-size: 24px;
+    color: var(--dark-blue);
+    margin-top: 27px;
+}
+
+.order-component p{
+    text-align: center;
+    width: 258px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    margin-top: 13px;
+}
+
+/* Widget */
+.plan-widget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 279px;
+    height: 80px;
+    background: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.plan-widget img{
+    width: 48px;
+}
+
+.plan-widget span{
+    margin-left: 20px;
+}
+
+.plan-widget span b{
+    color:hsl(223, 47%, 23%);
+}
+
+.plan-widget a{
+    margin-left: 50px;
+    font-weight: var(--font-bold);
+}
+
+.plan-widget a:hover{
+    color: var(--hover);
+}
+
+/* Buttons */
+.btn{
+    background-color: var(--bright-blue);
+    width: 279px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 24px;
+    /* Buttons text*/
+    font-family: inherit;
+    font-weight: var(--font-bold);
+    font-size: 15px;
+    color: var(--very-pale-blue);
+}
+
+.btn:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+
+.btn-text{
+    background: none;
+    color: var(--desaturated-blue);
+    margin-top: 9px;
+}
+
+.btn-text:hover{
+    background: none;
+    color: var(--dark-blue);
+}
