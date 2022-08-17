@@ -126,7 +126,7 @@ body{
 }
 
 .btn:not(.btn-text){
-    box-shadow: 0 16px 30px hsla(224, 23%, 55%, 0.40);
+    box-shadow: 0 16px 20px rgba(119, 108, 241, 0.3);
 }
 
 .btn-text{
